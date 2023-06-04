@@ -23,7 +23,7 @@ require 'header.php'
                 <div class="col-3 d-flex">
                     <label for="incremento" class="col-form-label col-4">Incremento: </label>
                     <div class="col-8">
-                        <input type="number" class="form-control" name="incremento" title="Número que define de quanto em quanto será a contagem" required>
+                        <input type="number" class="form-control" name="incremento" title="Número que define de quanto em quanto será a contagem" required min="0">
                     </div>
                 </div>
             </div>

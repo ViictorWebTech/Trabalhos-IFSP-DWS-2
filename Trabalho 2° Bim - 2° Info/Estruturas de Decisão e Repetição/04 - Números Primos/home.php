@@ -40,7 +40,10 @@ require 'header.php';
 
                 if ($_GET['num'] == 2) {
                     $afirmacao = "<span class='text-success fw-bold fs-2 text-decoration-underline px-2'>é</span>";
-                } elseif ($_GET['num'] % 2 == 0) {
+                } elseif ($_GET['num'] == 1) {
+                    $afirmacao = "<span class='text-danger fw-bold fs-2 text-decoration-underline px-2'>não é</span>";
+                } 
+                elseif ($_GET['num'] % 2 == 0) {
                     $afirmacao = "<span class='text-danger fw-bold fs-2 text-decoration-underline px-2'>não é</span>";
                 } else {
                     $afirmacao = "<span class='text-success fw-bold fs-2 text-decoration-underline px-2'>é</span>";

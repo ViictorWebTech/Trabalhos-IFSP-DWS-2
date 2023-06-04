@@ -35,7 +35,39 @@ if (($num1 > $num2) and ($num1 > $num3) and ($num2 > $num3)){
     $resultado = "$maior, $meio e $menor";
 }elseif (($num1 == $num2) and ($num1 == $num3) and ($num2 == $num3)){
     $resultado = "Os três números são iguais";
+}elseif (($num1 == $num2) and ($num1 > $num3)){
+    $maior = $num1;
+    $meio = $num2;
+    $menor = $num3;
+    $resultado = "$maior, $meio e $menor";
+}elseif (($num2 == $num3) and ($num2 > $num1)){
+    $maior = $num2;
+    $meio = $num3;
+    $menor = $num1;
+    $resultado = "$maior, $meio e $menor";
+}elseif (($num1 == $num3) and ($num1 > $num2)){
+    $maior = $num1;
+    $meio = $num3;
+    $menor = $num2;
+    $resultado = "$maior, $meio e $menor";
+} elseif (($num1 == $num2) and ($num1 < $num3)){
+    $maior = $num3;
+    $meio = $num1;
+    $menor = $num2;
+    $resultado = "$maior, $meio e $menor";
+}elseif (($num2 == $num3) and ($num2 < $num1)){
+    $maior = $num1;
+    $meio = $num2;
+    $menor = $num3;
+    $resultado = "$maior, $meio e $menor";
+}elseif (($num1 == $num3) and ($num1 < $num2)){
+    $maior = $num2;
+    $meio = $num1;
+    $menor = $num3;
+    $resultado = "$maior, $meio e $menor";
 }
+
+
 
 
 require 'header.php'
